@@ -476,6 +476,12 @@ z-index: 1;
 }
 
 }
+
+@media (max-width:720px) {
+  html{
+    font-size: 45%;
+  }
+}
 @media (max-width:540px) {
   html{
     font-size: 40%;
