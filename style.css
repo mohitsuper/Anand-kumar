@@ -9,7 +9,7 @@
     font-family: "poppies", sans-serif;
         text-transform: capitalize;
 
-  transition: 0s;
+  transition: 0.3s;
   border-radius: .5rem;
   text-decoration: none;
 }
@@ -46,6 +46,14 @@ html{
   border-radius: 5rem;
 }
 
+
+#logo{
+  width:20rem;
+  height: 5rem;
+  object-fit: cover;
+  
+  
+}
 .btu{
   display: inline-block;
   background: crimson;
@@ -63,7 +71,7 @@ html{
   background: none;
 }
 body{
-  background: var(--black);
+  background: var(--black-body);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position:center;
@@ -86,13 +94,13 @@ section{
 
 }
 .header{
-position: flex;
 top:0;
 left:0;
 border-top-left-radius:0;
 right: 0;
+padding-right: 2rem;
 z-index: 1000;
-background-color:var(--light-bg);
+background-color:var(--black-body);
 position:fixed;
 
 }
@@ -225,6 +233,7 @@ padding: 0 0 0 0;
 
 .homes{
   margin-top: 8.5rem;
+  margin-bottom: 6.5rem;
 }
 .home{
   display: flex;
@@ -267,6 +276,14 @@ padding: 0 0 0 0;
   margin-bottom: 1rem;
 }
 
+.home .cantener h4{
+  margin-top:1.5rem;
+  font-size: 3.5rem;
+  font-weight: 200;
+  color:var(--creem);
+}
+
+
 .home .cantener h1{
     font-size: 5rem;
     font-weight: 800;
@@ -287,6 +304,46 @@ padding: 0 0 0 0;
   color: #aaa;
 }
 
+
+.home .cantener .main{
+  margin-top:3rem;
+  display: flex;
+  flex-direction: column;
+  gap:2rem;
+  font-size:2rem;
+}
+
+.home .cantener .main .row-1,.home .cantener .main .row-2{
+   gap:2rem;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.item{
+  background-color: #F2CE2A;
+  padding: 1rem;
+  padding-right: 2rem;
+  font-color: var(--light-bg);
+  font-family: cursive;
+}
+
+
+.row-1 .item:nth-child(1){
+  background: #7ADC98;
+}
+
+.row-1 .item:nth-child(2) {
+  background: #eee;
+}
+
+.row-2 .item:nth-child(1) {
+  background: #2A6DD6;
+}
+
+.row-2 .item:nth-child(2) {
+  background: #D6B22A;
+}
 
 /*-----------about page css------------*/
 .about .row{
