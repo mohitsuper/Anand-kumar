@@ -385,6 +385,9 @@ z-index: 1;
 
 .about  .row .cap{
   flex:1 1 40rem;
+  width:100%;
+  font-size: 1rem;
+  width:100%;
   text-align: center;
 }
 .about  .row  .cap h3{
@@ -399,7 +402,7 @@ z-index: 1;
 .about .row .cap p{
   padding:1rem 0;
   line-height: 2;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color:var(--light-white);
 }
 
@@ -429,6 +432,11 @@ z-index: 1;
     section {
       padding: 2rem;
       margin-bottom: 0rem;
+    }
+    
+    html {
+      font-size: 48%;
+      width:100%;
     }
   
 .header .flex .navbar a{
@@ -475,6 +483,13 @@ z-index: 1;
   flex-direction: column;
 }
 
+}
+
+@media only screen and (max-width:540px){
+  html{
+    font-size: 45%;
+  }
+  
 }
 
 @media (max-width:720px) {
